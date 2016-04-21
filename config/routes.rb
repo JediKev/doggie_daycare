@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :dogs, only [:index]
+
   get 'dogs/index'
 
   get 'controller/index'
