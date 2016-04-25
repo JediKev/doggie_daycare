@@ -16,6 +16,7 @@
 			<td><%= dog.breed %></td>
 			<td><%= dog.age %></td>
 			<td><%= link_to "show dog", dog_path(dog) %></td>
+			<td><%= link_to "edit dog", edit_dog_path(dog) %></td>
 		</tr>
 		<% end %>
 	</tbody>

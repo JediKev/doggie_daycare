@@ -25,7 +25,13 @@ class DogsController < ApplicationController
   end
 
   def update
-    
+    @dog = Dog.find(params[:id])
+    if @dog.update(dog_params)
+      redirect_to dogs_url, notice: "Successfully Updated"
+    else
+      flash.now[:notice] = "Something went wrong...Didn't update dog."
+      render :edit
+    end
   end
 
 private
