@@ -3,6 +3,7 @@
 	<thead>
 		<tr>
 			<th>ID</th>
+			<th>OWNER</th>
 			<th>NAME</th>
 			<th>BREED</th>
 			<th>AGE</th>
@@ -12,6 +13,7 @@
 		<% @dogs.each do |dog| %>
 		<tr>
 			<td><%= dog.id %></td>
+			<td><%= dog.owner %></td>
 			<td><%= dog.name %></td>
 			<td><%= dog.breed %></td>
 			<td><%= dog.age %></td>

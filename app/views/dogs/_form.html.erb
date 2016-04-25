@@ -1,4 +1,7 @@
 <%= form_for @dog do |dog_fields| %>
+	<%= dog_fields.label :owner %>
+	<%= dog_fields.text_field :owner %>
+
 	<%= dog_fields.label :name %>
 	<%= dog_fields.text_field :name %>
 
