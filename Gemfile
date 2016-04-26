@@ -41,6 +41,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # Adds Jazz-Hands gem
+  gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
+  # Adds Pry-Byebug gem
   gem 'pry-byebug'
 end
 
