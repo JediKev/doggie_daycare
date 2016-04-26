@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'thin'
 # Adds the Stamp gem
 gem 'stamp'
+# Adds Bootstrap
+gem 'bootstrap-sass', '~> 3.3.6'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -39,7 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  gem 'pry-byebug'
 end
 
 group :development do
